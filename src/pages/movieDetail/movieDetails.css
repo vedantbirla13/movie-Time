@@ -1,0 +1,483 @@
+.movieDet{
+    transition: transform .2s;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0.19rem;
+    cursor: pointer;
+    min-width: 200px;
+    height: 500px;
+    z-index: 0;
+    border: 1px solid rgb(99, 99, 99);
+}
+
+.movie{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.movie_intro{
+    width: 80%;
+}
+
+.movie_backdrop{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: 0 35%;
+}
+
+.movie_detail{
+    align-items: end;
+    width: 75%;
+    display: flex;
+    position: relative;
+    bottom: 150px;
+}
+
+.movie_detailLeft{
+    margin-right: 30px;
+}
+
+.movie_poster{
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
+}
+
+.movie_detailRight{
+    color: gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 290px;
+}
+
+.movie__detailRightTop > div{
+    text-shadow: 0px 0px 5px #000000;
+    margin-bottom: .5rem;
+}
+
+.movie_name{
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.movie_tag{
+    font-family: Poppins;
+    color: white;
+    margin: 0.2rem;
+    letter-spacing: 1px;
+}
+
+.movie_rating{
+    letter-spacing: 1px;
+    font-family: Poppins;
+}
+
+.movie_voteCount{
+    margin-left: 1rem;
+}
+
+.movie_genres{
+    margin: 1.25rem 0;
+}
+
+.movie_genre{
+    padding: .5rem;
+    border: 1px solid gold;
+    border-radius: 15px;
+    color: white;
+    margin-right: 2rem;
+    letter-spacing: 1px;
+}
+
+
+.movie_detailRightBottom{
+    margin: 1rem 0;
+    flex: 0.8;
+}
+
+.overviewText{
+    font-size: 1.5rem;
+    font-family: Montserrat;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    display: flex;
+    position: relative;
+    align-items: center;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.overview_para{
+    font-style: italic;
+    margin-left: auto;
+    font-family: Poppins;
+    font-size: .9rem;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.movie_heading{
+    font-size: 2.2rem;
+    font-family: Montserrat;
+    text-align: center;
+    margin: 1rem;
+}
+
+.movie_links{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.useful_links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.links_heading{
+    font-size: 2.2rem;
+    font-family: Montserrat;
+    text-align: center;
+    margin: 1rem;
+}
+
+.movie_Button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 150px;
+    font-weight: bold;
+}
+
+.movie_homeButton{
+    background-color:#f3ce13 ;
+    color: black;
+}
+
+
+
+.movie_production{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    /* margin-bottom: 4rem; */
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie_prodcutionCompany{
+    width: 200px;
+    height: 200px;
+    margin: 2rem;
+    background-color: gold;
+    object-fit: contain;
+}
+
+.production_companyImage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.production_name{
+    font-family: Poppins;
+    letter-spacing: 1px;
+}
+
+/* Media Query */
+
+@media screen and (max-width : 780px) {
+    .movie_backdrop{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position: 0 20%;
+    }
+    
+    .movie_poster{
+        visibility: hidden;
+        display: none;
+    }
+
+    .movie_detail{
+        align-items: end;
+        display: flex;
+        bottom: 0px;
+        /* position: relative; */
+    }
+    
+    .movie_detailLeft{
+        margin-right: 0px;
+    }
+
+    
+    .movie_detailRight{
+        color: gold;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .movie__detailRightTop > div{
+        text-shadow: 0px 0px 5px #000000;
+        margin-bottom: .5rem;
+    }
+    
+    .movie_name{
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    
+    .movie_tag{
+        font-family: Poppins;
+        color: white;
+        margin: 0.2rem;
+        letter-spacing: 1px;
+    }
+    
+    .movie_rating{
+        letter-spacing: 1px;
+        font-family: Poppins;
+    }
+    
+    .movie_voteCount{
+        margin-left: 1rem;
+    }
+
+    .movie_heading{
+        font-size: 2rem;
+        font-family: Montserrat;
+        text-align: center;
+        margin: 1rem;
+    }
+    
+    .movie_links{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+    
+    .useful_links{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .links_heading{
+        font-size: 2rem;
+        font-family: Montserrat;
+        text-align: center;
+        margin: 1rem;
+    }
+    
+    .movie_Button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.8rem 1rem;
+        border-radius: 15px;
+        cursor: pointer;
+        width: 150px;
+        font-weight: bold;
+    }
+    
+    .movie_homeButton{
+        background-color:#f3ce13 ;
+        color: black;
+    }
+    
+    
+    
+    .movie_production{
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        /* margin-bottom: 4rem; */
+        font-size: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .movie_prodcutionCompany{
+        width: 50px;
+        height: 50px;
+        margin: 2rem;
+        background-color: gold;
+        object-fit: contain;
+    }
+    
+    .production_companyImage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .production_name{
+        font-family: Poppins;
+        font-size: 0.5rem;        
+    }
+
+
+}
+
+@media screen and (max-width : 390px) {
+    .movie_backdrop{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position: 0 20%;
+    }
+    
+    .movie_poster{
+        visibility: hidden;
+        display: none;
+    }
+
+    .movie_detail{
+        align-items: end;
+        display: flex;
+        bottom: 0px;
+        top: 100px
+        /* position: relative; */
+    }
+    
+    .movie_detailLeft{
+        margin-right: 0px;
+    }
+
+    
+    .movie_detailRight{
+        color: gold;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .movie__detailRightTop > div{
+        text-shadow: 0px 0px 5px #000000;
+        margin-bottom: .5rem;
+    }
+    
+    .movie_name{
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    
+    .movie_tag{
+        font-family: Poppins;
+        color: white;
+        margin: 0.2rem;
+        letter-spacing: 1px;
+    }
+    
+    .movie_rating{
+        letter-spacing: 1px;
+        font-family: Poppins;
+    }
+    
+    .movie_voteCount{
+        margin-left: 1rem;
+    }
+
+    .movie_heading{
+        font-size: 1.5rem;
+        font-family: Montserrat;
+        text-align: center;
+        margin: 1rem;
+    }
+    
+    .movie_links{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 4rem;
+        margin-top: 10rem;
+
+    }
+    
+    .useful_links{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+    
+    .links_heading{
+        font-size: 1.5rem;
+        font-family: Montserrat;
+        text-align: center;
+        margin: 1rem;
+    }
+    
+    .movie_Button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.8rem 1rem;
+        border-radius: 15px;
+        cursor: pointer;
+        width: 150px;
+        font-weight: bold;
+    }
+    
+    .movie_homeButton{
+        background-color:#f3ce13 ;
+        color: black;
+    }
+    
+    
+    
+    .movie_production{
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        /* margin-bottom: 4rem; */
+        font-size: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .movie_prodcutionCompany{
+        width: 50px;
+        height: 50px;
+        margin: 2rem;
+        background-color: gold;
+        object-fit: contain;
+    }
+    
+    .production_companyImage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .production_name{
+        font-family: Poppins;
+        font-size: 0.5rem;        
+    }
+
+
+}

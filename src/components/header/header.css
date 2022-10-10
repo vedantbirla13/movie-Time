@@ -1,0 +1,120 @@
+.header{
+    margin: 0 2.5rem;
+    padding: .5rem 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerLeft , .headerRight {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    justify-content: space-between;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-family: Poppins;
+    color: gold;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+}
+
+a > span {
+    margin: 0 30px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    font-family: Montserrat;
+}
+
+
+@media screen and (max-width: 1250px) {
+    .header{
+        margin: 0 1rem;
+        padding: .5rem 0;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    a {
+        justify-content: space-between;
+        color: white;
+        padding: 1rem ;
+        font-size: 1.1rem;
+        font-family: Poppins;
+        color: gold;
+        text-decoration: none;
+    
+    }
+    
+    a > span {
+        margin: 0 30px;
+        font-size: 2rem;
+        cursor: pointer;
+        color: white;
+        font-family: Montserrat;
+    }
+}
+
+@media screen and (max-width : 690px) {
+        .header{
+        margin: 0 .7rem;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a {
+        justify-content: space-between;
+        color: white;
+        padding: 1rem ;
+        font-size: .6rem;
+        font-family: Poppins;
+        color: gold;
+        text-decoration: none;
+
+    }
+
+    a > span {
+        margin: 0 10px;
+        font-size: .7rem;
+        cursor: pointer;
+        color: white;
+        font-family: Montserrat;
+    }
+
+}
+
+@media screen and (max-width : 380px) {
+    
+    .header{
+        margin: 0 .6rem;
+;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    a {
+        justify-content: space-between;
+        color: white;
+        font-size: .5rem;
+        font-family: Poppins;
+        color: gold;
+        text-decoration: none;
+    
+    }
+    
+    a > span {
+        margin: 0 10px;
+        font-size: .6rem;
+        cursor: pointer;
+        color: white;
+        font-family: Montserrat;
+    }
+}

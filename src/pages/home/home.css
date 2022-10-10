@@ -1,0 +1,147 @@
+.posterImage {
+    height: 600px;
+}
+
+.posterImage > img {
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+.posterImage_overlay{
+    position: absolute;
+    padding: 5rem;
+    bottom: 0px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: linear-gradient(rgb(0,0,0,0) , rgb(0,0,0,1));
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.posterImage_overlay:hover{
+    opacity: 1;
+}
+
+.posterImage_title{
+    font-family: Montserrat;
+    font-weight: 900px;
+    font-size: 4rem;
+    margin-bottom: 0.4rem;
+    text-align: left;
+}
+
+.posterImage_runtime{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.posterImage_rating{
+    margin-left: 3rem;
+}
+
+.posterImage_desc{
+    font-family: Poppins;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    display: flex;
+    text-align: left;
+    width: 50%;
+}
+
+@media screen and (max-width: 1250px) {
+    .posterImage_title{
+        font-family: Montserrat;
+        font-weight: 900px;
+        font-size: 2rem;
+        margin-bottom: 0.4rem;
+        text-align: left;
+    }
+
+    .posterImage_overlay{
+        position: absolute;
+        padding: 2rem;
+        bottom: 0px;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: flex-start;
+        background-image: linear-gradient(rgb(0,0,0,0) , rgb(0,0,0,1));
+        opacity: 1;
+        transition: opacity .3s;
+    }
+
+    .posterImage_runtime{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .posterImage_desc{
+        font-size: .9rem;
+        margin-bottom: 0.25rem;
+        display: flex;
+        text-align: left;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width : 990px) {
+    .posterImage {
+        height: 100%;
+        width: 100%;
+    }
+
+    .posterImage_overlay{
+        position: absolute;
+        padding: 2rem;
+        bottom: 0px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: flex-start;
+        background-image: linear-gradient(rgb(0,0,0,0) , rgb(0,0,0,1));
+        opacity: 1;
+        transition: opacity .3s;
+    }
+
+    .posterImage_title{
+        font-family: Montserrat;
+        font-weight: 900px;
+        font-size: .7rem;
+        margin-bottom: 0.4rem;
+        text-align: left;
+    }
+
+    .posterImage_runtime{
+        font-size: .5rem;
+    }
+
+    .posterImage_desc{
+        font-size: .5rem;
+        margin-bottom: 0.25rem;
+        display: flex;
+        text-align: left;
+        width: 50%;
+    }
+
+    
+}
+
+@media screen and (max-width : 380px) {
+    .posterImage_desc{
+        font-size: .5rem;
+        margin-bottom: 0.25rem;
+        display: flex;
+        text-align: left;
+        width: 100%;
+    }
+}
+

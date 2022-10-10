@@ -1,0 +1,23 @@
+.movie_list{
+    padding: 0 3rem 3rem 3rem;
+}
+
+.movie_title{
+    font-size: 1.75rem;
+    font-family: Poppins !important;
+    letter-spacing: 1.5px;
+    margin: 4rem;
+}
+
+.list_cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.movie_card{
+    /* display: flex; */
+    margin-bottom: 3rem;
+}
+
